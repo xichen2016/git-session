@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Work with Git</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/thoughtworks.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+    <section>
+      <h1 class="title">Work with Git</h1>
+      <p>
+        <small>Created by Chen Xi</small>
+      </p>
+    </section>
+    <section>
+      <section class="bg-lightgray darkgray">
+        <h2 class="blue">What is Git?</h2>
+      </section>
+      <section class="bg-lightgray darkgray">
+        <p>The most widely used modern version control system in the world today.</p>
+        <img style="width: 40%" src="images/git.png">
+      </section>
+    </section>
+    <section>
+      <section class="bg-lightgray darkgray">
+        <img style="width: 80%" src="images/svn_git.png">
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">Svn</h3>
+        <p>集中式管理，学习难度低，上手简单</p>
+        <img style="width: 40%" src="images/svn_model.png">
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">Git</h3>
+        <p>分布式管理，学习难度相对较高</p>
+        <img style="width: 60%" src="images/git_model.png">
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">Why do we choose Git?</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">分布式管理允许本地提交</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">Git分支功能强大</h3>
+        <pre><code>
+          $ git log other..
+          $ git log ..other
+        </code></pre>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">更好的发布控制</h3>
+        <p>针对同一个项目，Git可以设置不同层级的版本库，或者通过不同的分支实现对发布的控制。</p>
+        <p>eg. 设置只有管理员才有权限Push的版本库或者分支，用于稳定发布版本的维护。</p>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">隔离开发，提交审核</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">版本库的安全性</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">无数次后悔的机会</h3>
+      </section>
+    </section>
+
+    <section>
+      <h3 class="blue">Git Authentication</h3>
+      <ul>
+        <li>HTTPS</li>
+        <li>SSH</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3 class="blue">Git Branches</h3>
+      <ul>
+        <li>Master</li>
+        <li>Develop</li>
+        <li>Feature</li>
+        <li>Release</li>
+      </ul>
+    </section>
+
+    <section>
+      <section class="bg-lightgray darkgray">
+        <h2 class="blue">Git Commands</h2>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git config</h3>
+        <pre><code>
+          $ git config --global user.name "9527"
+          $ git config --global alias.st status
+        </code></pre>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git init</h3>
+        <h3 class="blue">git remote</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git status</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git diff</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git checkout</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git add</h3>
+        <h3 class="blue">git rm</h3>
+        <h3 class="blue">git reset</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git commit</h3>
+        <h3 class="blue">git push</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git log</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git pull</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git stash</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git revert</h3>
+      </section>
+
+      <section class="bg-lightgray darkgray">
+        <h3 class="blue">git branch</h3>
+        <h3 class="blue">git rebase</h3>
+        <h3 class="blue">git merge</h3>
+      </section>
+    </section>
+
+    <section class="bg-lightgray darkgray">
+      <h3 class="blue">How to solve conflicts?</h3>
+      <img style="width: 40%" src="images/confuse.jpg">
+    </section>
+
+    <section class="bg-lightgray darkgray">
+      <h3 class="blue">.gitignore</h3>
+    </section>
+  </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+  // Full list of configuration options available at:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+    // Optional reveal.js plugins
+    dependencies: [
+      {
+        src: 'lib/js/classList.js', condition: function () {
+        return !document.body.classList;
+      }
+      },
+      {
+        src: 'plugin/markdown/marked.js', condition: function () {
+        return !!document.querySelector('[data-markdown]');
+      }
+      },
+      {
+        src: 'plugin/markdown/markdown.js', condition: function () {
+        return !!document.querySelector('[data-markdown]');
+      }
+      },
+      {
+        src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+        return !!document.querySelector('pre code');
+      }, callback: function () {
+        hljs.initHighlightingOnLoad();
+      }
+      },
+      {src: 'plugin/zoom-js/zoom.js', async: true},
+      {src: 'plugin/notes/notes.js', async: true}
+    ]
+  });
+</script>
+</body>
+</html>
